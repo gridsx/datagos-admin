@@ -1,6 +1,9 @@
 import { FC } from 'react';
 import SiteNavi from '../components/Menu';
 
+import './home.css'
+import InstancePage from './instances/Instance';
+
 const HomePage: FC = () => {
 
     return <div className="home-page">
@@ -9,7 +12,9 @@ const HomePage: FC = () => {
         </div>
         <div className='site-right'>
             <div className='site-top'>
-                
+            </div>
+            <div className='site-content'>
+                <InstancePage/>
             </div>
         </div>
     </div>
